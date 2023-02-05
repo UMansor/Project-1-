@@ -12,7 +12,7 @@ model = load_model("keras_Model.h5", compile=False)
 # Load the labels
 class_names = open("labels.txt", "r").readlines()
 
-# CAMERA can be 0 or 1 based on default camera of your computer
+# CAMERA can be 0 or 1 based on default camera of computer
 camera = cv2.VideoCapture(0)
 
 while True:
@@ -44,7 +44,7 @@ while True:
     # Listen to the keyboard for presses.
     keyboard_input = cv2.waitKey(1)
 
-    # 27 is the ASCII for the esc key on your keyboard.
+    # 27 is the ASCII for the esc key on keyboard.
     if keyboard_input == 27:
         break
 
